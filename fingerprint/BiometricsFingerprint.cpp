@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.sm8475"
 
 #include <hardware/hw_auth_token.h>
 
@@ -26,8 +26,7 @@ typedef struct fingerprint_hal {
 } fingerprint_hal_t;
 
 static const fingerprint_hal_t kModules[] = {
-        {"fpc", false},        {"fpc_fod", true}, {"goodix", false}, {"goodix_fod", true},
-        {"goodix_fod6", true}, {"silead", false}, {"syna", true},
+        {"fpc_fod", true}, {"goodix_fod", true},
 };
 
 }  // anonymous namespace
@@ -367,6 +366,11 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
         case FINGERPRINT_TEMPLATE_ENROLLING:
             ALOGD("onEnrollResult(fid=%d, gid=%d, rem=%d)", msg->data.enroll.finger.fid,
                   msg->data.enroll.finger.gid, msg->data.enroll.samples_remaining);
+            if (thisPtr->mUdfpsHandler) {
+                thisPtr->mUdfpsHandler->onEnrollResult(msg->data.enroll.finger.fid,
+                                                       msg->data.enroll.finger.gid,
+                                                       msg->data.enroll.samples_remaining);
+            }
             if (!thisPtr->mClientCallback
                          ->onEnrollResult(devId, msg->data.enroll.finger.fid,
                                           msg->data.enroll.finger.gid,
