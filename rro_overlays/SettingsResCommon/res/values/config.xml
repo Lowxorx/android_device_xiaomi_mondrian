@@ -27,10 +27,10 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>256</item>
-        <item>257</item>
-        <item>258</item>
-        <item>267</item>
-        <item>268</item>
+        <item>256</item> <!--saturated-->
+        <item>269</item> <!--original-->
+        <item>258</item> <!--vivid-->
+        <item>267</item> <!--srgb-->
+        <item>268</item> <!--P3-->
     </integer-array>
 </resources>

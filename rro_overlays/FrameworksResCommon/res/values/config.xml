@@ -101,9 +101,10 @@
     <integer-array name="config_availableColorModes">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
         <item>3</item>
         <item>256</item> <!--saturated-->
-        <item>257</item> <!--original-->
+        <item>269</item> <!--original-->
         <item>258</item> <!--vivid-->
         <item>267</item> <!--srgb-->
         <item>268</item> <!--P3-->
