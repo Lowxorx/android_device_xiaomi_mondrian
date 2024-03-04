@@ -1,0 +1,13 @@
+diff --git a/build/tasks/kernel.mk b/build/tasks/kernel.mk
+index d54e89b0..68f5b610 100644
+--- a/build/tasks/kernel.mk
++++ b/build/tasks/kernel.mk
+@@ -462,7 +462,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
+ 			echo "Building DTBs"; \
+ 			$(call make-kernel-target,dtbs); \
+ 		fi
+-	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
++	$(hide) if grep -q '=m' $(KERNEL_CONFIG) && false; then \
+ 			echo "Building Kernel Modules"; \
+ 			$(call make-kernel-target,modules) || exit "$$?"; \
+ 			echo "Installing Kernel Modules"; \
