@@ -14,8 +14,6 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 PRODUCT_NAME := evolution_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := 23013PC75G
 
 PRODUCT_SYSTEM_NAME := mondrian_global
 PRODUCT_SYSTEM_DEVICE := mondrian
