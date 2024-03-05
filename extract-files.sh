@@ -59,9 +59,6 @@ function blob_fixup() {
         vendor/etc/init/init.embmssl_server.rc)
             sed -i -n '/interface/!p' "${2}"
             ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            sed -ni '/dolby/!p' "${2}"
-            ;;
         vendor/lib64/libsdmcore.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v33.so" "${2}"
             ;;
