@@ -10,8 +10,8 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT_GL "POCO/mondrian_global/mondrian:13/SKQ1.220303.001/V14.0.6.0.TMNMIXM:user/release-keys"
-#define FINGERPRINT_CN "Redmi/mondrian/mondrian:13/SKQ1.220303.001/V14.0.26.0.TMNCNXM:user/release-keys"
+#define FINGERPRINT_GL "POCO/mondrian_global/mondrian:12/SKQ1.230401.001/V816.0.3.0.UMNMIXM:user/release-keys"
+#define FINGERPRINT_CN "Redmi/mondrian/mondrian:12/SKQ1.230401.001/V816.0.6.0.TMNCNXM:user/release-keys"
 
 static const variant_info_t mondrian_global_info = {
     .hwc_value = "GL",
