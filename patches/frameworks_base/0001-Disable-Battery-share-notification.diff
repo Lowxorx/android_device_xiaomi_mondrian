@@ -1,0 +1,29 @@
+diff --git a/packages/SystemUI/src/com/android/systemui/qs/tiles/PowerShareTile.java b/packages/SystemUI/src/com/android/systemui/qs/tiles/PowerShareTile.java
+index 2b9abb5b7d23..af00d98f56b9 100644
+--- a/packages/SystemUI/src/com/android/systemui/qs/tiles/PowerShareTile.java
++++ b/packages/SystemUI/src/com/android/systemui/qs/tiles/PowerShareTile.java
+@@ -127,15 +127,15 @@ public class PowerShareTile extends QSTileImpl<QSTile.BooleanState>
+             }
+         }
+ 
+-        try {
+-            if (mPowerShare.isEnabled()) {
+-                mNotificationManager.notify(NOTIFICATION_ID, mNotification);
+-            } else {
+-                mNotificationManager.cancel(NOTIFICATION_ID);
+-            }
+-        } catch (RemoteException ex) {
+-            ex.printStackTrace();
+-        }
++        // try {
++        //     if (mPowerShare.isEnabled()) {
++        //         mNotificationManager.notify(NOTIFICATION_ID, mNotification);
++        //     } else {
++        //         mNotificationManager.cancel(NOTIFICATION_ID);
++        //     }
++        // } catch (RemoteException ex) {
++        //     ex.printStackTrace();
++        // }
+     }
+ 
+     @Override
