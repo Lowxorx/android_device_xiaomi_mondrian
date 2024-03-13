@@ -2019,8 +2019,8 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
-# Keymint from derpfest 14 patched by klozz
-vendor/bin/hw/android.hardware.security.keymint-service-qti|a7c7b499299d23e7db36803046c30786caaac089
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
